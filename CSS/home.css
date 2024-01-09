@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+/* CSS para primeira section: banner principal com o gato */
+
+
+
+.banner {
+    height: 70vh;
+}
+
+.banner-principal {
+    background-image: url("../imagesHome/banner.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100% 80vh;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.grid-banner {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: end;
+    height: 100%;
+}
+
+.gato {
+    max-width: 100%;
+}
+
+.txt-banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin-bottom: 10vh;
+    align-items: start;
+    gap: 30px;
+
+}
+
+.txt-banner h1 {
+    color: #003459;
+    font-family: Alata;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.txt-banner i {
+    font-size: 3.5rem;
+    padding: 0px 3px;
+}
+
+
+.txt-banner h3 {
+    color: #00528C;
+    font-family: "Alata", "sans-serif";
+    font-size: 3.1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.txt-banner a {
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #FFF;
+    font-family: "Poppins", "sans-serif";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 59px;
+    background: #003459;
+    cursor: pointer;
+}
+
+/* Medias query para a segunda section: banner principal do gato */
+
+@media(min-width: 1550px) {
+
+    .txt-banner h1 {
+        font-size: 7rem;
+    }
+
+    .txt-banner i {
+        font-size: 4.5rem;
+    }
+
+    .txt-banner h3 {
+        font-size: 3.4rem;
+    }
+
+    .txt-banner a {
+        font-size: 1.3rem;
+    }
+
+    .gato {
+        width: 150%;
+    }
+
+}
+
+@media(max-width: 1350px) {
+
+    .banner-principal {
+        background-image: url("../imagesHome/banner2.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .txt-banner h1 {
+        font-size: 4.5rem;
+    }
+
+    .txt-banner i {
+        font-size: 3rem;
+    }
+
+    .txt-banner h3 {
+        font-size: 2.5rem;
+    }
+
+    .txt-banner a {
+        font-size: .8rem;
+    }
+
+}
+
+@media(max-width: 902px) {
+
+
+    .grid-banner {
+        grid-template-columns: 1fr;
+        justify-items: left;
+    }
+
+    .txt-banner h1 {
+        font-size: 4.5rem;
+    }
+
+    .txt-banner i {
+        font-size: 3rem;
+    }
+
+    .txt-banner h3 {
+        font-size: 2.5rem;
+    }
+
+    .txt-banner a {
+        font-size: .8rem;
+    }
+
+    .txt-banner {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 150px;
+    }
+
+    .gato {
+        justify-self: center;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .txt-banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .txt-banner i {
+        font-size: 2.5rem;
+    }
+
+    .txt-banner h3 {
+        font-size: 2.3rem;
+    }
+
+    .txt-banner a {
+        font-size: .8rem;
+    }
+
+}
+
+/* CSS para a segunda section: ofertas do dia */
+
+.ofertas {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.ofertas-txt h1 {
+    color: #003459;
+    font-family: Alata;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ofertas-txt span {
+    color: #00A7E7;
+    font-family: Alata;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ofertas-txt p {
+    color: #000;
+    font-family: "Poppins", "sans-serif";
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.container-oferta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    padding: 20px;
+}
+
+.container-oferta a {
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #003459;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.container-oferta a:hover {
+    background-color: #00528C;
+    transition: 0.5s ease;
+}
+
+/* card de ofertas do dia */
+
+.card-oferta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 232px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.card-oferta-img img {
+    position: absolute;
+    width: 170px;
+}
+
+.card-oferta-img svg {
+    margin-top: 80px;
+}
+
+.card-oferta-titulo h2 {
+    color: #003459;
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.card-oferta-titulo .descricao {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.card-oferta-titulo p {
+    color: #AAA;
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-oferta-titulo .categoria {
+    margin-top: 10px;
+}
+
+.card-oferta-botao a {
+    text-decoration: none;
+    color: #003459;
+    font-family: 'Alata', sans-serif;
+    border: 2px solid #003459;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+.card-botao a:hover {
+
+    background-color: #003459;
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+/* Carrossel de ofertas do dia */
+
+.oferta-swiper {
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px 0px;
+    margin-right: 5%;
+}
+
+.oferta-slide {
+    justify-content: center;
+    display: flex;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination {}
+
+/* Medias query para a segunda section: ofertas do dia */
+
+@media(max-width: 1120px) {
+    .swiper-navBtn {
+        display: none;
+    }
+
+    .oferta-swiper {
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 1024px) {
+    .ofertas {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media(min-width: 1900px) {
+    .oferta-swiper {
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    .ofertas-txt h1 {
+        font-size: 4rem;
+    }
+
+    .ofertas-txt span {
+        font-size: 4rem;
+
+    }
+
+    .ofertas-txt p {
+        font-size: 1rem;
+
+    }
+}
+
+/* CSS PARA A SECTIO 3: NOVOS PRODUTOS */
+
+.novos-produtos {
+    background-color: #FCEED5;
+    padding: 50px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.novos-produtos h1 {
+    color: #0078CD;
+    font-family: 'Alata', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 0px 25px 5px;
+}
+
+.novos-produtos span {
+    color: #003459;
+    font-family: 'Alata', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.novosProdutos-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.novosProdutos-slide {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* CSS PARA O CARD DE NOVOS PRODUTOS: SECTION 3 */
+
+.card-NovosProdutos {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-NovosProdutos .card-NovosProdutos-categoria {
+    color: #000;
+    font-family: 'Alata', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-NovosProdutos h2 {
+    color: #003459;
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.card-NovosProdutos img {
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+}
+
+
+.card-NovosProdutos-preco {
+    display: flex;
+    gap: 10px;
+
+}
+
+.card-NovosProdutos .preco-antigo {
+    color: #697475;
+    font-family: 'Alata', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: line-through; 
+}
+
+.card-NovosProdutos .novo-preco {
+    color: #0AAEB9;
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-NovosProdutos a {
+    text-decoration: none;
+    background-color: #003459;
+    color: white;
+    padding: 10px 30px;
+    align-self: center;
+}
+
