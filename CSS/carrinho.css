@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-
-
 .carrinho {
     color: #003459;
     font-family: poppins;
     display: grid;
     justify-content: center;
+
 
 }
 
@@ -21,8 +20,9 @@
 
 .nome_carrinho {
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: grid;
+   margin-left:10px ;
 }
 
 .cep {
@@ -103,16 +103,6 @@ span {
     padding: 5px;
 }
 
-.traço::after {
-    content: " ";
-    background: #0034594f;
-    position: absolute;
-    z-index: 1;
-    width: 1px;
-    height: 90px;
-    left: 58rem;
-}
-
 
 .forma_entrega {
 
@@ -183,18 +173,14 @@ span {
 
 .remover {
     border: none;
+    cursor: pointer;
 }
 
 @media (min-width: 1400px) {
 
     .traço::after {
-        content: " ";
-        background: #0034594f;
-        position: absolute;
-        z-index: 1;
-        width: 1px;
-        height: 22rem;
-        margin-left: 18rem;
+      
+        display: none;
 
     }
  
@@ -222,15 +208,6 @@ span {
         margin-left: 100px;
     }
 
-    .traço::after {
-        content: " ";
-        background: #0034594f;
-        position: absolute;
-        z-index: 1;
-        width: 1px;
-        height: 23rem;
-        margin-left: -3rem;
-    }
 
 }
 

@@ -1,8 +1,3 @@
-@import "./global.css";
 @import "./footerNavbar.css";
-@import "./home.css";
 @import "./carrinho.css";
-@import "./telaProdutos.css";
-@import "./pagamento.css";
-
-/* IMPORTE SEU CSS AQUI, IGUAL OS EXEMPLOS ACIMA :) */
+@import "./global.css"
